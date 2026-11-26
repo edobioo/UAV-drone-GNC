@@ -1,0 +1,7 @@
+# File generati dalla compilazione
+/objects/
+/runsim
+
+# Risultati delle simulazioni
+/outputs/*
+!/outputs/.gitkeep

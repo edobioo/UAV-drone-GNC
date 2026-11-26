@@ -1,0 +1,7 @@
+# Override per i CSV demo creati prima dell'adozione del log ufficiale.
+[columns]
+time = "t_s"
+position = ["x_enu_m", "y_enu_m", "z_enu_m"]
+quaternion = ["qw", "qx", "qy", "qz"]
+velocity = ["vx_enu_mps", "vy_enu_mps", "vz_enu_mps"]
+angular_velocity = ["wx_body_radps", "wy_body_radps", "wz_body_radps"]

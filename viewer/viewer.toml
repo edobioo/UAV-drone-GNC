@@ -1,0 +1,26 @@
+# Hamilton; v_ENU = R(q) @ v_body. Body: X avanti, Y sinistra, Z alto.
+[data]
+quaternion_direction = "body_to_enu" # oppure enu_to_body
+# Non interpolare intervalli maggiori di questa soglia senza consenso esplicito.
+gap_threshold_s = 1.0
+
+[columns]
+time = "Time"
+position = ["Position_ENU[0]", "Position_ENU[1]", "Position_ENU[2]"]
+quaternion = ["Quaternion_ENU_body[0]", "Quaternion_ENU_body[1]", "Quaternion_ENU_body[2]", "Quaternion_ENU_body[3]"] # sempre in ordine w,x,y,z
+velocity = ["Velocity_ENU[0]", "Velocity_ENU[1]", "Velocity_ENU[2]"]
+angular_velocity = ["Omega_body[0]", "Omega_body[1]", "Omega_body[2]"]
+
+[model]
+arm_m = 0.19
+rotor_radius_m = 0.085
+body_length_m = 0.22
+body_width_m = 0.10
+body_height_m = 0.065
+axes_length_m = 0.20
+world_axes_length_m = 0.32
+
+[display]
+camera = "follow" # free, follow, attitude
+fps = 60
+max_trail_points = 4000 # limite solo grafico; i campioni di posa restano integri
